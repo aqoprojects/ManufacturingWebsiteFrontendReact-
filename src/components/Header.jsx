@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import Logo from '../assets/images/manufacturing-logo.png';
 import '../assets/css/Header.css'
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
@@ -19,7 +18,7 @@ const Header = () =>
       <header>
         <nav className='w-full mx-auto flex justify-between items-center-safe p-4'>
           <a href="">
-            <img src={Logo} className='size-15' alt="logo" />
+            <img src='../assets/images/manufacturing-logo.png' className='size-15' alt="logo" />
           </a>
 
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../assets/css/Article1.css';
 import { RiStarSFill } from "react-icons/ri";
 import { MdOutlineAvTimer } from "react-icons/md";
