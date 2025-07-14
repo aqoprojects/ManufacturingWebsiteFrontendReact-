@@ -85,7 +85,7 @@ const Services = () => {
         </section>
 
         <section className="flex justify-center items-center w-full mt-8 px-3 pb-10">
-          <div className="bg-[url(src/assets/images/wireframeImage.jpg)] flex justify-center items-center flex-col flex-1 md:max-w-230 rounded-2xl ">
+          <div className="bg-[url(/src/assets/images/wireframeImage.jpg)] flex justify-center items-center flex-col flex-1 md:max-w-230 rounded-2xl ">
             <p className="text-center text-white text-2xl mt-6">Professional</p>
             <p className="text-white mt-3 mb-8 max-w-100 text-center">Designed for greater flexibility, this solution offers advance tools for custom tailoring to your needs.</p>
             <button className="bg-white text-black px-10 py-3 rounded-3xl font-semibold mb-8">Get Started</button>

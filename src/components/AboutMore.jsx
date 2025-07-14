@@ -7,7 +7,7 @@ const AboutMore = () =>
       <article className="bg-white px-3 flex-col flex md:flex-row justify-center-safe items-start md:px-10 py-30 mx-auto">
         <section className=" p-4  bg-gray-300/30 md:px-20 md:py-13 rounded-2xl flex justify-center items-center ">
            <div className=" shadow-md rounded-2xl shadow-gray-400">
-             <img src="../src/assets/images/projectstatusImage.jpg" className="object-cover w-100 rounded-2xl" alt="" />
+             <img src="/src/assets/images/projectstatusImage.jpg" className="object-cover w-100 rounded-2xl" alt="" />
            </div>
         </section>
         <section className="flex flex-auto">

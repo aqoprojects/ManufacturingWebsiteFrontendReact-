@@ -18,7 +18,7 @@ const Header = () =>
       <header>
         <nav className='w-full mx-auto flex justify-between items-center-safe p-4'>
           <NavLink to="/">
-            <img src='../../src/assets/images/manufacturing-logo.png' className='size-15' alt="logo" />
+            <img src='/src/assets/images/manufacturing-logo.png' className='size-15' alt="logo" />
           </NavLink>
 
 
