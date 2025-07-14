@@ -20,7 +20,7 @@ const Header = () =>
       <header>
         <nav className='w-full mx-auto flex justify-between items-center-safe p-4'>
           <NavLink to="/">
-            <img src={Logo} className={`size-15  ${isLogoReady ? '' : 'animate-pulse'} `} onLoad={()=> setIsLogoReady(true)} alt="logo" />
+            <img src={isLogoReady && Logo} className={`size-15  ${isLogoReady ? '' : 'animate-pulse'} `} onLoad={()=> setIsLogoReady(true)} alt="logo" />
           </NavLink>
 
 
