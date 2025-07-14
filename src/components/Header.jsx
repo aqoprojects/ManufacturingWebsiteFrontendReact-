@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import '../assets/css/Header.css'
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
@@ -14,12 +14,13 @@ const Header = () =>
     menuToggleOpen.current.classList.toggle('hidden')
     menuToggleClose.current.classList.toggle('hidden')
   }
+  const [isLogoReady, setIsLogoReady] = useState(false)
   return (
     <>
       <header>
         <nav className='w-full mx-auto flex justify-between items-center-safe p-4'>
           <NavLink to="/">
-            <img src={Logo} className='size-15' alt="logo" />
+            <img src={Logo} className={`size-15  ${isLogoReady ? '' : 'animate-pulse'} `} onLoad={()=> setIsLogoReady(true)} alt="logo" />
           </NavLink>
 
 
@@ -40,12 +41,12 @@ const Header = () =>
             </button>
           </div>
         </nav>
-        <div ref={mobileMenu} id="mobile-menu" className="hidden z-100 absolute left-0 right-0 mt-1 bg-white dark:bg-gray-200 md:hidden">
+        <div ref={mobileMenu} id="mobile-menu" className="hidden z-200 absolute left-0 right-0 mt-1 bg-white dark:bg-gray-200 md:hidden">
           <div className='flex flex-col justify-center-safe'>
-            <a href="#" className="text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black">Home</a>
-            <a href="#" className="text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black">About</a>
-            <a href="#" className="text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black">Services</a>
-            <a href="#" className="text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black">Contact</a>
+            <NavLink to="/" className={({ isActive }) => `text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black ${isActive && 'active-mobile'}` }>Home</NavLink>
+            <NavLink to="/about" className={({ isActive }) => `text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black ${isActive && 'active-mobile'}` }>About</NavLink>
+            <NavLink to="/services" className={({ isActive }) => `text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black ${isActive && 'active-mobile'}` }>Services</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => `text-lg hover:bg-black hover:text-white active:bg-black active:text-white p-2 py-6 dark:bg-gray-200 dark:text-black ${isActive && 'active-mobile'}` }>Contact</NavLink>
 
              <button className='mt-6 mb-3 mx-2 bg-cyan-950 text-white dark:text-white dark:bg-black  py-3 rounded-3xl cursor-pointer outline-none'>Sign Up</button>
           </div>
