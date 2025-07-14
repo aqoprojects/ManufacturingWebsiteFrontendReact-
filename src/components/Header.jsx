@@ -3,6 +3,7 @@ import '../assets/css/Header.css'
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 import { NavLink } from 'react-router-dom';
+import Logo from '../assets/images/ManufacturingLogo.png'
 const Header = () =>
 {
   const menuToggleOpen = useRef(null)
@@ -18,7 +19,7 @@ const Header = () =>
       <header>
         <nav className='w-full mx-auto flex justify-between items-center-safe p-4'>
           <NavLink to="/">
-            <img src='/src/assets/images/manufacturing-logo.png' className='size-15' alt="logo" />
+            <img src={Logo} className='size-15' alt="logo" />
           </NavLink>
 
 
