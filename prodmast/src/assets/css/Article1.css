@@ -1,0 +1,82 @@
+.heading-animation{
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.heading-button-animation{
+  animation: fadeIn 0.6s ease-in forwards;
+  animation-delay: 0.6s;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; visibility: visible; transform: translateY(0); }
+
+}
+
+.heading-review-animation{
+  animation: fadeIn 0.6s ease-in forwards;
+  animation-delay: 0.9s;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; visibility: visible; transform: translateY(0); }
+
+}
+
+
+.heading-info-animation-1{
+  animation: HIA1fadeIn 0.6s ease-in forwards;
+  animation-delay: 0.9s;
+  visibility: hidden;
+  
+}
+
+.heading-info-animation-2{
+  animation: HIA1fadeIn 0.6s ease-in forwards;
+  animation-delay: 0.9999s;
+  visibility: hidden;
+  
+}
+
+@keyframes HIA1fadeIn {
+  0% {  opacity: 0; z-index: 0; transform: translateX(-100px);}
+  100% { visibility: visible; z-index: 10; opacity: 1; transform: translate(0); }
+
+}
+
+
+.heading-info-animation-3{
+  animation: HIA3fadeIn 0.6s ease-in forwards;
+  animation-delay: 1.4s;
+  visibility: hidden;
+  
+}
+
+
+@keyframes HIA3fadeIn {
+  0% {  opacity: 0; z-index: 0; transform: translateY(100px);}
+  100% { visibility: visible; z-index: 10; opacity: 1; transform: translateY(0); }
+
+}
+
+.heading-info-animation-4{
+  animation: HIA4fadeIn 0.6s ease-in forwards;
+  animation-delay: 1.5s;
+  visibility: hidden;
+  
+}
+
+
+@keyframes HIA4fadeIn {
+  0% {  opacity: 0; z-index: 0; transform: translateX(100px);}
+  100% { visibility: visible; z-index: 10; opacity: 1; transform: translateX(0); }
+
+}

@@ -1,0 +1,14 @@
+.about-loading-animation{
+  animation: ALAfadeIn 0.6s ease-in forwards;
+  animation-delay: 0.3s;
+  visibility: hidden;
+  animation-timeline: view();
+  animation-range: entry 0%;
+}
+
+
+@keyframes ALAfadeIn {
+  0% {  opacity: 0; }
+  100% { visibility: visible; opacity: 1; }
+
+}
