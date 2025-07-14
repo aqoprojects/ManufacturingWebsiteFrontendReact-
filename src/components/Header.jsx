@@ -17,9 +17,9 @@ const Header = () =>
     <>
       <header>
         <nav className='w-full mx-auto flex justify-between items-center-safe p-4'>
-          <a href="">
-            <img src='../assets/images/manufacturing-logo.png' className='size-15' alt="logo" />
-          </a>
+          <NavLink to="/">
+            <img src='../../src/assets/images/manufacturing-logo.png' className='size-15' alt="logo" />
+          </NavLink>
 
 
           <div className="hidden md:flex items-center space-x-6 relative">

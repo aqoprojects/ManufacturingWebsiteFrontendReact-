@@ -12,7 +12,7 @@ const Contact = () => {
         </section>
         <section className='container'>
           <div className=' rounded-2xl md:min-w-80 '>
-            <img src="src/assets/images/integrationImage.jpeg" className='rounded-2xl' alt="" />
+            <img src="../../src/assets/images/integrationImage.jpeg" className='rounded-2xl' alt="" />
           </div>
         </section>
 

@@ -5,7 +5,7 @@ import { RiToolsLine } from "react-icons/ri";
 import { BsShieldCheck } from "react-icons/bs";
 import { PiCubeLight } from "react-icons/pi";
 import { GoGraph } from "react-icons/go";
-import '../assets/css/About.css'
+import '../assets/css/About.css';
 
 const About = () => {
   return (

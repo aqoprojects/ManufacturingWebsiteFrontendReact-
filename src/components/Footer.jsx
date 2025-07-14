@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-black px-2 md:px-10">
       <article className=' flex flex-wrap  items-center text-gray-300  gap-20 py-20 '>
         <div>
-          <img src="src/assets/images/Manufacturing-logo.png" alt="" className='size-25' />
+          <img src="../../src/assets/images/Manufacturing-logo.png" alt="" className='size-25' />
           <p className='text-gray-300 '>Our solution makes Production faster and cheaper. <br /> Contact us for more infomation</p>
         </div>
         <div>
